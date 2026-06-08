@@ -2,6 +2,7 @@ import { BsPeopleFill } from "react-icons/bs";
 import { AiFillShopping } from "react-icons/ai";
 import { MdDashboard, MdFastfood } from "react-icons/md";
 import { NavLink } from "react-router-dom";
+import { BiNote } from "react-icons/bi";
 
 export default function Sidebar() {
   const menuClass = ({ isActive }) =>
@@ -64,6 +65,14 @@ export default function Sidebar() {
               Products
             </NavLink>
           </li>
+
+          <li>
+            <NavLink id="menu-5" to="/notes" className={menuClass}>
+              <BiNote className="mr-4 text-xl" />
+              Notes
+            </NavLink>
+          </li>
+
         </ul>
       </div>
 

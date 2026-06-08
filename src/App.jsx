@@ -13,6 +13,7 @@ import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import Forgot from "./pages/auth/Forgot";
 import Guest from "./pages/Guest";
+import Notes from "./pages/Notes";
 import { Route, Routes } from "react-router-dom";
 import "./assets/tailwind.css";
 
@@ -28,6 +29,7 @@ function App() {
               <Route path="/orders" element={<Orders />} />
               <Route path="/customers" element={<Customers />} />
               <Route path="products" element={<Products />} />
+              <Route path="/notes" element={<Notes />} />
               <Route path="/products/:id" element={<ProductDetail />} /> 
             </Route>
 
